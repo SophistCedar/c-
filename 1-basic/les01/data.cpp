@@ -1,7 +1,7 @@
 #include<iostream> 
 #include<limits>
 using namespace std;  
-  
+
 int main()  
 {  
     cout << "type: \t\t" << "************size**************"<< endl;  

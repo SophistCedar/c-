@@ -1,15 +1,7 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
-#include <iomanip>
-using std::setw;
-// 程序使用了 setw() 函数来格式化输出。
-// std::_Setw std::setw(int __n)
-// +1 overload
-// @brief Manipulator for @c width.
-// @param __n The new width.
-// Sent to a stream object, this manipulator calls @c width(__n) for
-// that object.
 int main ()
 {
    int n[10]; // n 是一个包含 10 个整数的数组

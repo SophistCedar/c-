@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
- 
+
 int main ()
 {
    int  var = 20;   // 实际变量的声明

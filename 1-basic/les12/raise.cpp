@@ -24,10 +24,10 @@ int main ()
     while(++i){
        cout << "Going to sleep...." << endl;
        if( i == 3 ){
-          raise( SIGINT);//生成信号
+          raise( SIGINT);//可以使用 raise 函数生成信号
        }
        sleep(1);
     }
- 
+
     return 0;
 }

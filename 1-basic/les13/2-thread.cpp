@@ -1,11 +1,11 @@
 //文件名：test.cpp
- 
+
 #include <iostream>
 #include <cstdlib>
 #include <pthread.h>
 using namespace std;
 #define NUM_THREADS     5
-
+//创建线程传递参数
 void *PrintHello(void *threadid)
 {  
    // 对传入的参数进行强制类型转换，由无类型指针变为整形数指针，然后再读取

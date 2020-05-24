@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
- 
+//多个命名空间
+
 // 第一个命名空间
 namespace first_space{
    void func(){
@@ -16,7 +17,7 @@ namespace second_space{
 using namespace first_space;
 int main ()
 {
- 
+
    // 调用第一个命名空间中的函数
    func();
    

@@ -4,7 +4,7 @@
 #include <unistd.h>
 using namespace std;
 #define NUM_THREADS     5
- 
+
 void *wait(void *t)
 {
    long tid;
@@ -14,7 +14,7 @@ void *wait(void *t)
    cout << "Thread with id : " << tid << "  ...exiting " << endl;
    pthread_exit(NULL);
 }
- 
+
 int main ()
 {
    int rc;
@@ -22,11 +22,11 @@ int main ()
    pthread_t threads[NUM_THREADS];
    pthread_attr_t attr;
    void *status;
- 
+
    // 初始化并设置线程为可连接的（joinable）
    pthread_attr_init(&attr);
    pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
- 
+
    //创建线程
    for( i=0; i < NUM_THREADS; i++ ){
       cout << "main() : creating thread, " << i << endl;
@@ -36,7 +36,7 @@ int main ()
          exit(-1);
       }
    }
- 
+
    // 删除属性，并等待其他线程
    pthread_attr_destroy(&attr);
    for( i=0; i < NUM_THREADS; i++ ){

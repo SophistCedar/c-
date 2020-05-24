@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// C++ 中的运算符重载
+// C++ 中的运算符重载：可定义为类的成员函数 或者 普通的非成员函数
 // 您可以重定义或重载大部分 C++ 内置的运算符。这样，您就能使用自定义类型的运算符。
 // 重载的运算符是带有特殊名称的函数，函数名是由关键字 operator 和其后要重载的运算符符号构成的。
 // 与其他函数一样，重载运算符有一个返回类型和一个参数列表。
@@ -8,7 +8,7 @@ using namespace std;
 // 声明加法运算符用于把两个 Box 对象相加，返回最终的 Box 对象。
 // 大多数的重载运算符可被定义为普通的非成员函数或者被定义为类成员函数。
 // 如果我们定义上面的函数为类的非成员函数，那么我们需要为每次操作传递两个参数，如下所示：
-// Box operator+(const Box&, const Box&);
+// Box operator+(const Box&, const Box&);//Box对象的常引用
 class Box
 {
    public:
@@ -31,8 +31,8 @@ class Box
       {
           height = hei;
       }
-      // 重载 + 运算符，用于把两个 Box 对象相加
-      Box operator+(const Box& b)
+      // 重载 + 运算符，用于把两个 Box 对象相加，返回类型是Box对象
+      Box operator+(const Box& b)//b的常引用
       {
          Box box;
          box.length = this->length + b.length;

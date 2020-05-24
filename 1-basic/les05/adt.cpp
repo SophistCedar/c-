@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
- 
+
 class Adder{
    public:
       // 构造函数

@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// C++ 中的函数重载
+// C++ 中的函数重载：同名函数，但是函数形参不同（个数，类型，顺序）
 // 在同一个作用域内，可以声明几个功能类似的同名函数，但是这些同名函数的形式参数（指参数的个数、类型或者顺序）必须不同。
 // 您不能仅通过返回类型的不同来重载函数。
 // 下面的实例中，同名函数 print() 被用于输出不同的数据类型：
@@ -19,7 +19,7 @@ class printData
         cout << "字符串为: " << c << endl;
       }
 };
- 
+
 int main(void)
 {
    printData pd;
@@ -31,6 +31,6 @@ int main(void)
    // 输出字符串
    char c[] = "Hello C++";
    pd.print(c);
- 
+
    return 0;
 }

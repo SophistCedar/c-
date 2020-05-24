@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
- 
+// new data-type;
 int main ()
 {
    double* pvalue  = NULL; // 初始化为 null 的指针

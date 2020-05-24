@@ -13,7 +13,7 @@ double division(int a, int b)
 {
    if( b == 0 )
    {
-      throw "Division by zero condition!";
+      throw "Division by zero condition!";//当问题出现时，程序会抛出一个异常，通过使用 throw 关键字来完成。
    }
    return (a/b);
 }
@@ -23,13 +23,13 @@ int main ()
    int x = 50;
    int y = 0;
    double z = 0;
- 
+   //try 块中放置可能抛出异常的代码，try 块中的代码被称为保护代码。
    try {
      z = division(x, y);
      cout << z << endl;
-   }catch (const char* msg) {
+   }catch (const char* msg) {//division里可能抛出一个类型为 const char* 的异常
      cerr << msg << endl;
    }
- 
+
    return 0;
 }

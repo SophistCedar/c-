@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
- 
+
 int main( )
 {
     // 标准输出流（cout）

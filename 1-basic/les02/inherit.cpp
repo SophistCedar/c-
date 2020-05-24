@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
- 
-// 基类
+
+// 基类，定义类
 class Shape 
 {
    public:
@@ -17,8 +17,8 @@ class Shape
       int width;
       int height;
 };
- 
-// 派生类
+
+// 派生类，Rectangle类继承了Shape类的属性和方法
 class Rectangle: public Shape
 {
    public:
@@ -27,7 +27,7 @@ class Rectangle: public Shape
          return (width * height); 
       }
 };
- 
+
 int main(void)
 {
    Rectangle Rect;
@@ -38,6 +38,6 @@ int main(void)
  
    // 输出对象的面积
    cout << "Total area: " << Rect.getArea() << endl;
- 
+
    return 0;
 }

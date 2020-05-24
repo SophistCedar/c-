@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
- 
+//多个命名空间
+
 // 第一个命名空间
 namespace first_space{
    void func(){
@@ -13,6 +14,7 @@ namespace second_space{
       cout << "Inside second_space" << endl;
    }
 }
+
 int main ()
 {
  

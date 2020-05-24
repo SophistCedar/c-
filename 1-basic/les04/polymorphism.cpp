@@ -14,7 +14,7 @@ class Shape {
    protected:
       int width, height;
    public:
-      Shape( int a=0, int b=0)
+      Shape( int a=0, int b=0)//构造函数
       {
          width = a;
          height = b;
@@ -28,13 +28,14 @@ class Shape {
 
 class Rectangle: public Shape{
    public:
-      Rectangle( int a=0, int b=0):Shape(a, b) { } //直接继承Shape方法
+      Rectangle(int a=0, int b=0):Shape(a, b) { } //直接继承Shape方法
       int area ()
       { 
          cout << "Rectangle class area :" <<endl;
          return (width * height); 
       }
 };
+
 class Triangle: public Shape{
    public:
       Triangle( int a=0, int b=0):Shape(a, b) { }

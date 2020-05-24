@@ -1,7 +1,7 @@
 #include <iostream>
  
 using namespace std;
- 
+
 // 基类 Shape
 class Shape 
 {
@@ -18,7 +18,7 @@ class Shape
       int width;
       int height;
 };
- 
+
 // 基类 PaintCost
 class PaintCost 
 {
@@ -28,8 +28,8 @@ class PaintCost
          return area * 70;
       }
 };
- 
-// 派生类,继承多个类
+
+// 派生类,继承多个类，使用:，多个基类用,分割开
 class Rectangle: public Shape, public PaintCost
 {
    public:
@@ -38,7 +38,7 @@ class Rectangle: public Shape, public PaintCost
          return (width * height); 
       }
 };
- 
+
 int main(void)
 {
    Rectangle Rect;
@@ -46,15 +46,15 @@ int main(void)
  
    Rect.setWidth(5);
    Rect.setHeight(7);
- 
+
    area = Rect.getArea();
    
    // 输出对象的面积
    cout << "Total area: " << Rect.getArea() << endl;
  
- 
+
    // 输出总花费
    cout << "Total paint cost: $" << Rect.getCost(area) << endl;
- 
+
    return 0;
 }

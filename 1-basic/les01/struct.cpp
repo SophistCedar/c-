@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
- 
+
 using namespace std;
 void printBook( struct Books *book );
 
@@ -38,6 +38,7 @@ int main( )
  
    return 0;
 }
+
 // 该函数以结构指针作为参数
 void printBook( struct Books *book )
 {

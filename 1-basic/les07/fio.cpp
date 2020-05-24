@@ -26,14 +26,17 @@ int main ()
    // 以写模式打开文件
    ofstream outfile;
    outfile.open("afile.dat");
- 
+
    cout << "Writing to the file" << endl;
    cout << "Enter your name: "; 
-   cin.getline(data, 100);// getline()函数从外部读取一行
- 
+   cin.getline(data, 100);// getline()函数从外部读取一行，只能操作c语言的字符数组
+   // string str;
+   // getline(cin,str);
+   // 这种方法可以实现输入到字符串内
+
    // 向文件写入用户输入的数据
    outfile << data << endl;
- 
+
    cout << "Enter your age: "; 
    cin >> data;
    cin.ignore();//ignore() 函数会忽略掉之前读语句留下的多余字符
